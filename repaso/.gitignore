@@ -1,4 +1,0 @@
-# ignoramos las carpetas bin y obj
-bin
-obj
-.depend
