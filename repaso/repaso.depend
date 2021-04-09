@@ -12,3 +12,16 @@
 	<stdlib.h>
 	"functions.h"
 
+1617910996 source:c:\users\alejandro fuertes\documents\unlam\unlam\repaso\functions.c
+	"functions.h"
+
+1617910996 c:\users\alejandro fuertes\documents\unlam\unlam\repaso\functions.h
+
+1617924655 source:c:\users\alejandro fuertes\documents\unlam\unlam\repaso\main.c
+	"main.h"
+
+1617910996 c:\users\alejandro fuertes\documents\unlam\unlam\repaso\main.h
+	<stdio.h>
+	<stdlib.h>
+	"functions.h"
+
