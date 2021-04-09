@@ -3,7 +3,7 @@
 
 int main()
 {
-    int prueba;//Prueba
+    int prueba;//Prueba2
 
     int resultado = prueba + 2;
     printf("%d", resultado);
