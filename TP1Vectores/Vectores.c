@@ -1,14 +1,14 @@
 #include "Vectores.h"
 #include "stdio.h"
 
-void insertarEnVector(int elemento, int posicion, int vec[]);
+void insertarEnVector(int elemento, int posicion, int* vec);
 void insertarEnVectorOrdenado(int elemento, int* vec, int longitud);
+void deleteInVector(int posicion, int* vec, int longitud);
 
 
 
-
-void insertarEnVector(int elemento, int posicion, int vec[]){
-    vec[posicion]=elemento;
+void insertarEnVector(int elemento, int posicion, int* vec){
+    *(vec+posicion-1)=elemento;
 }
 
 void insertarEnVectorOrdenado(int elemento, int* vec, int longitud){
@@ -43,6 +43,15 @@ void insertarEnVectorOrdenado(int elemento, int* vec, int longitud){
 
 }
 
+void deleteInVector(int posicion, int* vec, int longitud)
+{
+    int i;
 
+    for(i = (posicion-1); i < (longitud-1); i++){
+            *(vec+i) = *(vec+i+1);
+    }
+
+    *(vec+(longitud-1)) = 0;
+}
 
 
