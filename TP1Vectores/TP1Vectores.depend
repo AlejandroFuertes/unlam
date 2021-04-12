@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1618193105 source:h:\documents\jose\2021\programación\unlam\tp1vectores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Vectores.h"
+
+1618190026 h:\documents\jose\2021\programación\unlam\tp1vectores\vectores.h
+
+1618193327 source:h:\documents\jose\2021\programación\unlam\tp1vectores\vectores.c
+	"Vectores.h"
+	"stdio.h"
+
