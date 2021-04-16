@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1618601313 source:h:\documents\jose\2021\programación\unlam\tp1_matrices\matrices.c
+	"Matrices.h"
+
+1618600139 source:h:\documents\jose\2021\programación\unlam\tp1_matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Matrices.h"
+
+1618600139 h:\documents\jose\2021\programación\unlam\tp1_matrices\matrices.h
+
