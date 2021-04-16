@@ -12,7 +12,13 @@ typedef struct{
 
 
 void saludo();
-Alumno loadStructure();
-void showStructure();
 
+/* STRUCTS */
+Alumno loadStructure();
+void showStructure(Alumno alumno);
+void showStructureWithPointers(Alumno *alumno);
+
+/* FORMAT */
+void showInJsonFormat(Alumno *alumno);
+void changeOrderNyA(Alumno *alumno);
 #endif // FUNCTIONS_H_INCLUDED

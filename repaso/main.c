@@ -1,11 +1,13 @@
 #include "main.h"
 
+/*VARIABLES GLOBALES*/
+Alumno alumno = {11223344, "Pepito Paz", 10, 7.5};
+Alumno alumno2;
+
 int main()
 {
-    Alumno alumno = {11223344, "Pepito Paz", 10, 7.5};
-    Alumno alumno2;
     int opcion;
-    puts("1. Load data into a structure");
+    puts("1. Load and show data into a structure");
     puts("2. Format");
     puts("3. Pointers");
     puts("4. Save to text file");
@@ -14,15 +16,23 @@ int main()
     puts("Select an option: ");
     scanf("%d", &opcion);
 
+    menu(opcion);
+    return 0;
+}
+
+void menu(int opcion){
     switch (opcion)
     {
     case 1:
         puts("You Selected option 1: Struts");
         alumno2 = loadStructure();
         showStructure(alumno2);
+        showStructureWithPointers(&alumno);
         break;
     case 2:
         puts("You Selected option 2");
+        showInJsonFormat(&alumno);
+        changeOrderNyA(&alumno);
         break;
     case 3:
         puts("You Selected option 3");
@@ -45,6 +55,5 @@ int main()
         puts("Incorrect option");
         break;
     }
-
-    return 0;
 }
+
